@@ -1,0 +1,89 @@
+# Node.js / Backend .gitignore
+
+# Dependencies
+# ------------
+# Typically, dependencies should be installed via package managers (npm, yarn, pnpm).
+# Avoid committing the entire node_modules directory.
+node_modules/
+npm-debug.log*
+yarn-error.log
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment Variables
+# ---------------------
+# Never commit your environment variables file. It often contains sensitive credentials.
+# Instead, commit a template file (e.g., .env.example).
+.env
+.env.*.local
+.env.local
+.env.development
+.env.production
+# Exclude all .env files unless specifically allowed below
+.env*
+# Allow template/example files
+!.env.example
+!.env.template
+
+# Logs
+# ----
+# Log files are runtime artifacts and should not be version controlled.
+logs/
+*.log
+*.log.*
+
+# Build Output / Distribution Folders
+# -----------------------------------
+# If you have a build step (e.g., TypeScript compilation), ignore the output directory.
+dist/
+build/
+out/
+.parcel-cache/
+
+# Testing / Coverage Reports
+# --------------------------
+coverage/
+.nyc_output/
+mochawesome-report/
+*.lcov
+
+# IDE / Editor Specific Files
+# ---------------------------
+# User-specific settings for various editors.
+.idea/
+.vscode/*
+# Keep shared VS Code settings if desired
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# OS Generated Files
+# ------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files / Archives
+# --------------------------
+*.tmp
+*.swp
+*.bak
+*.orig
+*.zip
+*.tar.gz
+*.rar
+
+# Other Common Exclusions
+# -----------------------
+# Add any other project-specific files or directories that shouldn't be tracked.
+# For example, if you store user uploads locally during development:
+# uploads/
+
