@@ -43,7 +43,7 @@ export const sendMail = async (options) => {
   }
 }
 
-const emailVerificationGenContent = (username, verificationUrl) => {
+export const emailVerificationGenContent = (username, verificationUrl) => {
   return {
     body: {
       name: username,
@@ -61,7 +61,7 @@ const emailVerificationGenContent = (username, verificationUrl) => {
   }
 }
 
-const forgotPasswordGenContent = (username, passwordResetUrl) => {
+export const forgotPasswordGenContent = (username, passwordResetUrl) => {
   return {
     body: {
       name: username,

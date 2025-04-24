@@ -7,7 +7,7 @@ dotenv.config({
     path: "./.env"
 });
 import crypto from "crypto";
-import { AvailableUserRoles, UserRolesEnum } from "../utils/constants";
+import { AvailableUserRoles, UserRolesEnum } from "../utils/constants.js";
 
 const userSchema = new mongoose.Schema({
     avatar: {

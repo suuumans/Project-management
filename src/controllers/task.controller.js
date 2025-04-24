@@ -1,13 +1,13 @@
 
-import { Project } from "../models/project.model";
-import { asyncHandler } from "../utils/asyncHandler";
-import { isProjectMember, isProjectAdmin, isValidDate } from "../utils/helper";
-import { ApiError } from "../utils/apiError";
+import { Project } from "../models/project.model.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
+import { isProjectMember, isProjectAdmin, isValidDate } from "../utils/helper.js";
+import { ApiError } from "../utils/apiError.js";
 import mongoose from "mongoose";
-import { Task } from "../models/task.model";
-import { AvailableTaskStatus, TaskStatusEnum, AvailableTaskPriorities, TaskPrioritiesEnum } from "../utils/constants";
-import { ApiResponse } from "../utils/apiResponse";
-import { User } from "../models/user.model";
+import { Task } from "../models/task.model.js";
+import { AvailableTaskStatus, TaskStatusEnum, AvailableTaskPriorities, TaskPrioritiesEnum } from "../utils/constants.js";
+import { ApiResponse } from "../utils/apiResponse.js";
+import { User } from "../models/user.model.js";
 
 
 

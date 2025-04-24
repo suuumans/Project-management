@@ -1,12 +1,12 @@
-import { asyncHandler } from "../utils/asyncHandler";
-import { Project } from "../models/project.model";
-import { ProjectMember } from "../models/projectmember.model";
+import { asyncHandler } from "../utils/asyncHandler.js";
+import { Project } from "../models/project.model.js";
+import { ProjectMember } from "../models/projectmember.model.js";
 import mongoose from "mongoose";
-import { AvailableTaskStatus, AvailableUserRoles, UserRolesEnum } from "../utils/constants";
-import { Task } from "../models/task.model";
-import { ApiError } from "../utils/apiError";
-import { ApiResponse } from "../utils/apiResponse";
-import { User } from "../models/user.model";
+import { AvailableTaskStatus, AvailableUserRoles, UserRolesEnum } from "../utils/constants.js";
+import { Task } from "../models/task.model.js";
+import { ApiError } from "../utils/apiError.js";
+import { ApiResponse } from "../utils/apiResponse.js";
+import { User } from "../models/user.model.js";
 
 
 /**

@@ -1,14 +1,13 @@
 
-import { asyncHandler } from "../utils/asyncHandler"
-import { ApiError } from "../utils/apiError"
-import { ApiResponse } from "../utils/apiResponse"
+import { asyncHandler } from "../utils/asyncHandler.js"
+import { ApiError } from "../utils/apiError.js"
+import { ApiResponse } from "../utils/apiResponse.js"
 import dotenv from "dotenv"
 dotenv.config()
-import User from "../models/user.model"
-import { sendMail, emailVerificationGenContent } from "../utils/mail"
+import { User } from "../models/user.model.js"
+import { sendMail, emailVerificationGenContent } from "../utils/mail.js"
 import crypto from "crypto"
 import jwt from "jsonwebtoken"
-import { access } from "fs"
 
 
 // register user

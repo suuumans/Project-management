@@ -1,6 +1,6 @@
 
-import { Project } from "../models/project.model";
-import { ProjectMember } from "../models/projectmember.model";
+import { Project } from "../models/project.model.js";
+import { ProjectMember } from "../models/projectmember.model.js";
 
 
 /**

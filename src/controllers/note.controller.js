@@ -1,9 +1,9 @@
 
-import { ProjectNote } from "../models/note.model";
-import { Project } from "../models/project.model";
-import { ApiResponse } from "../utils/apiResponse";
-import { asyncHandler } from "../utils/asyncHandler";
-import { isProjectAdmin, isProjectMember } from "../utils/helper";
+import { ProjectNote } from "../models/note.model.js";
+import { Project } from "../models/project.model.js";
+import { ApiResponse } from "../utils/apiResponse.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
+import { isProjectAdmin, isProjectMember } from "../utils/helper.js";
 
 
 
